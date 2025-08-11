@@ -12,6 +12,7 @@ app/build/
 # Local config files
 local.properties
 app/google-services.json
+app/src/main/java/com/example/lapgenius/
 app/src/main/java/com/example/techanalysisapp3/util/AppConstants.java
 
 # Signing keys
