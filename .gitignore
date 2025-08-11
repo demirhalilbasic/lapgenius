@@ -1,0 +1,30 @@
+# Android Studio project files
+.idea/
+
+# Module files
+*.iml
+
+# Gradle files
+.gradle/
+build/
+app/build/
+
+# Local config files
+local.properties
+app/google-services.json
+app/src/main/java/com/example/techanalysisapp3/util/AppConstants.java
+
+# Signing keys
+*.jks
+*.keystore
+
+# Captures folder (emulator screenshots, video)
+captures/
+
+# Native build
+.externalNativeBuild/
+.cxx/
+
+# OS generated files
+.DS_Store
+Thumbs.db

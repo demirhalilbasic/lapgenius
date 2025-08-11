@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true"
+    android:background="@drawable/bg_register_pattern">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:focusableInTouchMode="true">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_full_transp"
+        android:contentDescription="App logo"/>
+
+    <!-- Ime -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ime"
+        app:startIconDrawable="@drawable/ic_person">
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/firstName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:imeOptions="actionNext"
+          android:inputType="textCapWords|textPersonName"
+          android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Prezime -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prezime"
+        android:layout_marginTop="8dp"
+        app:startIconDrawable="@drawable/ic_person">
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/lastName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:imeOptions="actionNext"
+          android:inputType="textCapWords|textPersonName"
+          android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Datum rođenja -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Datum rođenja"
+        android:layout_marginTop="8dp"
+        app:startIconDrawable="@drawable/ic_calendar">
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/dob"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:focusable="false"
+          android:clickable="true"
+          android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Spol -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"> <com.google.android.material.chip.ChipGroup
+        android:id="@+id/genderChipGroup"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:chipSpacingHorizontal="8dp">
+
+      <com.google.android.material.chip.Chip
+          android:id="@+id/chipMale"
+          style="@style/Widget.MaterialComponents.Chip.Choice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Muško" />
+
+      <com.google.android.material.chip.Chip
+          android:id="@+id/chipFemale"
+          style="@style/Widget.MaterialComponents.Chip.Choice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Žensko" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
+
+    <!-- Korisničko ime -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Korisničko ime"
+        android:layout_marginTop="8dp"
+        app:startIconDrawable="@drawable/ic_account">
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/username"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:imeOptions="actionNext"
+          android:inputType="textCapWords|textNoSuggestions"
+          android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Email -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginTop="8dp"
+        app:startIconDrawable="@drawable/ic_email">
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/email"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:imeOptions="actionNext"
+          android:inputType="textEmailAddress"
+          android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Lozinka -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lozinka"
+        android:layout_marginTop="8dp"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/ic_lock">
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/password"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:imeOptions="actionDone"
+          android:inputType="textPassword"
+          android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Registracija dugme -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registruj se"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        app:cornerRadius="8dp"
+        app:backgroundTint="@color/primary"
+        style="@style/Widget.MaterialComponents.Button"/>
+
+    <!-- Progress bar -->
+    <ProgressBar
+        android:id="@+id/regProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+  </LinearLayout>
+</ScrollView>

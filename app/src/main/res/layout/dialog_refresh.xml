@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@drawable/rounded_dialog_bg"
+    android:padding="24dp">
+
+    <!-- Bež pozadina -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/beige"
+        android:alpha="0.9"/>
+
+    <!-- Progress animacija -->
+    <ImageView
+        android:id="@+id/ivProgress"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_refresh"/>
+
+    <!-- Status ikone -->
+    <ImageView
+        android:id="@+id/ivStatus"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <!-- Poruka -->
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivProgress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/secondary"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

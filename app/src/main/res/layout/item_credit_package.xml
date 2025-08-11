@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <!-- Coin Container -->
+    <FrameLayout
+        android:id="@+id/coinContainer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="8dp"
+        android:background="@drawable/coin_background">
+
+        <!-- Outer gold circle -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/coin_outer_circle"/>
+
+        <!-- Inner orange circle with ID -->
+        <View
+            android:id="@+id/innerCircle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/coin_inner_circle"/>
+
+        <!-- Credit count -->
+        <TextView
+            android:id="@+id/tvCoinValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:shadowColor="#80000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"/>
+    </FrameLayout>
+
+    <!-- Price TextView -->
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+</LinearLayout>

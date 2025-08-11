@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="Pretraži"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView"/>
+
+    <item
+        android:id="@+id/menu_sort"
+        android:title="Sortiraj"
+        app:showAsAction="never">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sort_date_desc"
+                    android:title="Najnovije"/>
+                <item
+                    android:id="@+id/sort_date_asc"
+                    android:title="Najstarije"/>
+                <item
+                    android:id="@+id/sort_title_asc"
+                    android:title="A-Ž"/>
+                <item
+                    android:id="@+id/sort_title_desc"
+                    android:title="Ž-A"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_map"
+        android:title="Map prikaz"
+        android:icon="@drawable/ic_map"
+        app:showAsAction="ifRoom"/>
+
+</menu>

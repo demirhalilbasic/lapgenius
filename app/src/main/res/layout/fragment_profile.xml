@@ -1,0 +1,283 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingBottom="74dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <!-- fragment_profile.xml -->
+            <FrameLayout
+                android:id="@+id/coinContainer"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/profileFrame"
+                android:layout_marginEnd="16dp"
+                android:padding="8dp"
+                android:background="@drawable/coin_background"
+                android:clickable="true"
+                android:focusable="true">
+
+                <!-- Outer gold circle -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/coin_outer_circle"/>
+
+                <!-- Inner orange circle -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/coin_inner_circle"/>
+
+                <!-- Shine effect overlay -->
+                <ImageView
+                    android:id="@+id/ivShineOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/coin_shine_overlay"
+                    android:visibility="invisible"/>
+
+                <!-- Credit count -->
+                <TextView
+                    android:id="@+id/tvCoinValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"/>
+            </FrameLayout>
+
+            <!-- Profile Picture Frame -->
+            <FrameLayout
+                android:id="@+id/profileFrame"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivProfilePicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_pfp_placeholder"
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    app:strokeColor="@color/secondary"
+                    app:strokeWidth="2dp"/>
+
+                <ImageView
+                    android:id="@+id/ivEditPfp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_edit"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/bg_circle_secondary"
+                    android:padding="6dp"/>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <!-- Email TextView -->
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: user@example.com"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Ime i Prezime TextView (dodano!) -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Buy Credits Button -->
+        <Button
+            android:id="@+id/btnBuyCredits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kupi kredite"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Add below credits section -->
+        <TextView
+            android:id="@+id/tvSlotInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slotovi: 10/10 (Osnovni plan)"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btnBuySlots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kupi dodatne slotove"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Add this after btnBuySlots -->
+        <LinearLayout
+            android:id="@+id/brandSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_brand_section">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Omiljeni brend laptopa"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivFavoriteBrand"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_laptop"
+                    android:layout_marginEnd="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvBrandName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvBrandDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:maxLines="3"
+                        android:ellipsize="end"/>
+
+                    <Button
+                        android:id="@+id/btnLearnMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saznaj više"
+                        android:textColor="@color/secondary"
+                        android:background="@android:color/transparent"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/btnChangeBrand"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Promijeni brend"
+                    android:layout_marginEnd="4dp"/>
+
+                <Button
+                    android:id="@+id/btnViewOnOlx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pogledaj na OLX"
+                    android:backgroundTint="@color/secondary"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Add this before logoutButton -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dnevne trivija notifikacije"
+                android:textSize="16sp"/>
+
+            <Switch
+                android:id="@+id/switchNotifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Odjavi se"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/secondary"
+            android:textColor="@color/white"
+            android:backgroundTintMode="src_in"/>
+
+        <!-- New: small footer with version and author -->
+        <TextView
+            android:id="@+id/tvFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

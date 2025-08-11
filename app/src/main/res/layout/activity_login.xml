@@ -1,0 +1,152 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_login_pattern">
+
+    <!-- Transparentni logo+tekst za estetiku -->
+    <ImageView
+        android:id="@+id/ivLogoHeader"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/logo_full_transp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Vanjski Card: bež pozadina -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/loginCardOuter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/ivLogoHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@color/beige">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:background="@android:color/white">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Lozinka"
+                    android:layout_marginTop="8dp"
+                    app:endIconMode="password_toggle">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:imeOptions="actionDone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tvForgot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zaboravili ste lozinku?"
+                    android:textColor="?attr/colorSecondary"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAllCaps="true"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/loginButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prijavi se"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/tvRegisterPrompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nisi korisnik? Registruj se"
+                    android:textColor="?attr/colorPrimary"
+                    android:layout_marginTop="16dp"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Marquee logo animation -->
+    <FrameLayout
+        android:id="@+id/logoAnimationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:clipChildren="false"
+        app:layout_constraintTop_toBottomOf="@id/loginCardOuter"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/logoContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clipChildren="false"/>
+    </FrameLayout>
+
+    <!-- Kompatibilnost -->
+    <TextView
+        android:id="@+id/tvCompatibility"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="LapGenius je potpuno kompatibilan sa svim vodećim proizvođačima laptopa i pruža dubinsku analizu performansi, baterije i ekrana."
+        android:textColor="?attr/colorPrimary"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/logoAnimationContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Disclaimer o pravima -->
+    <TextView
+        android:id="@+id/tvDisclaimer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="© 2025 LapGenius. All rights reserved. All trademarks, service marks and logos displayed are the property of their respective owners. LapGenius is not affiliated with, endorsed by, or sponsored by any device manufacturer. The information provided is for reference only and is presented on an “as is” basis without warranty of any kind."
+        android:textColor="?attr/colorSecondary"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCompatibility"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

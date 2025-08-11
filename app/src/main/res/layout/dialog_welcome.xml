@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:id="@+id/tvWelcomeMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/primary"
+        android:lineSpacingMultiplier="1.2"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="OK"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary"/>
+
+</LinearLayout>

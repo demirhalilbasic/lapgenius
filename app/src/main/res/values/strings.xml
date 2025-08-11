@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LapGenius</string>
+    <string name="credits_format">Krediti: %d</string>
+    <string name="free_analyses">Preostalo besplatnih analiza danas: %d</string>
+    <string name="credits_label">Krediti: %d</string>
+    <string name="analyses_count">%d analiza</string>
+    <string name="app_version_format">v%s</string>
+
+    <color name="gold">#FFD700</color>
+    <color name="success">#4CAF50</color>
+    <color name="error">#F44336</color>
+
+    <!-- res/values/arrays.xml -->
+    <string-array name="leaderboard_sections">
+        <item>🔥 Najžešća ponuda ove hefte</item>
+        <item>📅 Prošla hefta</item>
+        <item>🚀 Rastu k\u0027o kvasac</item>
+        <item>🏆 Šefovi svih vremena</item>
+    </string-array>
+
+    <string name="email_not_verified_warning">Vaš email nije verifikovan. Kliknite na dugme ispod da pošaljemo verifikacioni email.</string>
+    <string name="send_verification_email">Pošalji verifikacioni email</string>
+    <string name="verification_sent">Verifikacija poslata</string>
+    <string name="email_verified_success">Email uspješno verifikovan!</string>
+
+    <string name="trivia_channel_name">Laptop Trivije</string>
+    <string name="trivia_channel_description">Dnevne zanimljivosti o laptopovima</string>
+    <string name="trivia_notification_title">Znate li? 🎯</string>
+    <string name="default_trivia">Današnja laptop trivija</string>
+
+    <!-- strings.xml -->
+    <string-array name="trivia_titles">
+        <item>Znate li? 🎯</item>
+        <item>Laptop trivija 💡</item>
+        <item>Zanimljivost 🔍</item>
+        <item>Današnja činjenica 📚</item>
+        <item>Tehnička činjenica 🤖</item>
+        <item>Gejming trivija 🎮</item>
+    </string-array>
+
+    <string name="badge_384_title">384 Kredita!</string>
+    <string name="badge_384_desc">Čestitamo! Dostigli ste legendarnih 384 kredita - simboličan broj koji odaje počast klasičnim NVIDIA grafičkim karticama s 384 CUDA jezgre. Ovo je pravi tehnički podvig!</string>
+
+    <string name="badge_100_title">100 Analiza!</string>
+    <string name="badge_100_desc">Wow! Obavili ste 100 analiza laptopa. Vaša predanost je nevjerovatna - pravi ste stručnjak za laptop konfiguracije i performanse!</string>
+
+    <string name="badge_rating_title">Visoka Ocjena 9.8+!</string>
+    <string name="badge_rating_desc">Izvanredno! Vaša analiza je dobila ocjenu 9.8 ili više. Ovo je dokaz vašeg izuzetnog oka za kvalitetne laptop konfiguracije i pravi ste virtuoz u ocjenjivanju!</string>
+
+    <!-- Brand Descriptions -->
+    <string name="brand_logo_desc">Logo brenda</string>
+
+    <string name="default_brand_short_description">Dobro došli u svijet laptopa\nVaš digitalni saveznik</string>
+    <string name="default_brand_full_description">Laptopi su od svog nastanka postali neizostavni dio našeg svakodnevnog života, od prvih teških i sporih modela do današnjih ultratankih mašina koje pokreću svijet. Od učenja i kreativnosti, preko posla i putovanja, pa sve do gaminga i razvoja tehnologije, laptop je tihi heroj svakog korisnika. Upoznajte različite brendove i njihove priče, istražite šta svaki od njih nudi i pronađite onaj koji najbolje odgovara vašim navikama, stilu i potrebama. Odaberite svog digitalnog saputnika i neka vaša avantura počne.</string>
+
+    <string name="acer_short_description">Pouzdani laptopi za sve potrebe</string>
+    <string name="acer_full_description">Acer Inc. je međunarodna kompanija osnovana 1976. godine na Tajvanu, poznata po širokom spektru proizvoda uključujući laptop računare, monitore, projektore i desktop sisteme. Njihova filozofija temelji se na balansiranju cijene i performansi, čineći Acer laptope izuzetno popularnim među studentima, malim preduzećima i kućnim korisnicima. Acer je poznat po tome što često koristi inovativne tehnologije i nudi dizajnerski prihvatljive uređaje uz održavanje konkurentnih cijena. Pored standardnih modela, kompanija nudi i specijalizovane serije poput Predator i Nitro za gejmere, te TravelMate za poslovne korisnike. Acer takođe ulaže u održivost i ekološki prihvatljive tehnologije kroz svoje linije proizvoda Vero.</string>
+
+    <string name="acer_predator_short_description">Elitna gaming serija</string>
+    <string name="acer_predator_full_description">Acer Predator predstavlja vrh ponude kada je riječ o Acerovim gaming rješenjima. Ova serija je dizajnirana za profesionalne gejmere i entuzijaste koji zahtijevaju vrhunske performanse. Predator laptopi dolaze sa najnovijim Intel i AMD procesorima, visokoperformansnim NVIDIA grafičkim karticama, ekranima sa visokim refresh rate-om (144Hz, 240Hz, pa i 300Hz), te izuzetno efikasnim sistemima hlađenja poput AeroBlade ventilatora. Osim tehničkih karakteristika, ističu se i futurističkim dizajnom, RGB osvjetljenjem i robusnim kućištem. Predator linija se često koristi i u e-sport okruženjima, a uz bogatu softversku podršku (npr. PredatorSense) pruža korisnicima potpunu kontrolu nad uređajem.</string>
+
+    <string name="acer_nitro_short_description">Gaming za širu publiku</string>
+    <string name="acer_nitro_full_description">Acer Nitro je serija laptopa namijenjena srednjem gaming segmentu i korisnicima koji žele dobre performanse bez pretjerane cijene. Nitro laptopi obično koriste kombinaciju jakih procesora i solidnih grafičkih kartica (npr. GTX/RTX serije), ali zadržavaju umjerenu cijenu zahvaljujući kompromisima u izradi kućišta ili dodatnim funkcijama. Pogodni su za casual gaming, streamanje sadržaja, multimedijalnu upotrebu i svakodnevne zadatke. Modeli poput Nitro 5 su posebno popularni među studentima i mladim gejmerima. Serija takođe nudi različite konfiguracije koje omogućavaju nadogradnju, što ih čini vrlo fleksibilnim izborom.</string>
+
+    <string name="apple_short_description">Elegantan dizajn i vrhunska optimizacija</string>
+    <string name="apple_full_description">Apple Inc. je američka tehnološka kompanija sa sjedištem u Cupertinu, Kalifornija, poznata po svojim premium proizvodima i jedinstvenom pristupu dizajnu i softversko-hardverskoj integraciji. MacBook serija laptopa, uključujući MacBook Air i MacBook Pro, koristi Apple-ove vlastite ARM bazirane čipove (M1, M2, M3), koji pružaju izuzetne performanse, energetsku efikasnost i dugotrajnu bateriju. Apple laptopi su poznati po Retina ekranima visoke rezolucije, minimalističkom dizajnu, i macOS operativnom sistemu koji pruža stabilnost, sigurnost i odličnu integraciju sa drugim Apple uređajima (iPhone, iPad, Apple Watch). MacBook je čest izbor među kreativnim profesionalcima (dizajneri, muzičari, programeri), ali i korisnicima koji traže premium kvalitet i pouzdanost. Nedostatak? Visoka cijena i ograničene opcije nadogradnje. Ipak, Apple i dalje važi za sinonim elegancije i inženjerske preciznosti.</string>
+
+    <string name="asus_short_description">Balans inovacije i performansi</string>
+    <string name="asus_full_description">ASUSTeK Computer Inc., ili kraće ASUS, je tajvanski gigant u oblasti računarske tehnologije, poznat po svojoj širokoj ponudi laptopa – od budžetskih modela do elitnih gejmerskih i poslovnih uređaja. ASUS laptopi su često cijenjeni zbog odličnog odnosa cijene i kvalitete, inovativnih rješenja poput ScreenPad-a (sekundarni ekran), NanoEdge dizajna, i robusnih sistema hlađenja. U ponudi se nalaze serije kao što su VivoBook, ZenBook, TUF Gaming i ROG, svaka sa svojom specifičnom ciljanom publikom. ASUS je takođe lider u matičnim pločama i grafičkim karticama, što im daje dodatnu prednost u optimizaciji svojih uređaja. Fokusiraju se na tehničke inovacije, ali zadržavaju atraktivnu cijenu i dostupnost.</string>
+
+    <string name="asus_rog_short_description">Ultimativni gejmerski brend</string>
+    <string name="asus_rog_full_description">Republic of Gamers (ROG) je ASUS-ova elitna podbrend serija posvećena profesionalnim i hardcore gejmerima. Osnovan 2006. godine, ROG je brzo postao sinonim za ekstremne performanse, najnovije tehnologije i prepoznatljiv, agresivan dizajn. ROG laptopi dolaze sa najjačim procesorima i GPU-ima, ultra-brzim ekranima (često i do 300Hz), i naprednim sistemima za hlađenje sa tečnim metalom i više toplotnih cijevi. Pored hardverskih performansi, ROG laptopi nude i bogat softverski ekosistem za kontrolu sistema, prilagođavanje RGB osvjetljenja, kao i integraciju sa ostalim ASUS ROG uređajima. Često se koriste i za streaming, kreiranje sadržaja i profesionalne e-sport takmičenja. Idealni su za one koji traže najbolje od najboljeg bez kompromisa.</string>
+
+    <string name="asus_tuf_gaming_short_description">Izdržljivost i pristupačne performanse</string>
+    <string name="asus_tuf_gaming_full_description">TUF (The Ultimate Force) Gaming je ASUS-ova serija koja se fokusira na izdržljivost i pouzdanost, uz zadržavanje solidnih gaming performansi po povoljnijoj cijeni u odnosu na ROG liniju. TUF laptopi prolaze kroz rigorozne vojne testove (MIL-STD-810H), što ih čini pogodnim i za rad u zahtjevnim okruženjima. Uređaji iz ove serije dolaze sa snažnim procesorima (Intel Core i7, AMD Ryzen 7), pristojnim NVIDIA grafičkim karticama (GTX/RTX), ekranima sa visokim osvježenjem (144Hz), kao i efikasnim sistemom hlađenja. Zahvaljujući balansu između cijene, izdržljivosti i performansi, TUF je popularan među studentima, gejmerima početnicima i korisnicima kojima je važna robusnost uređaja.</string>
+
+    <string name="asus_zenbook_short_description">Tanak, lagan i elegantan</string>
+    <string name="asus_zenbook_full_description">ZenBook je premium linija ultrabook laptopa iz ASUS-a, poznata po tankom i laganom aluminijumskom dizajnu, vrhunskim ekranima i mobilnosti. ZenBook uređaji ciljaju poslovne korisnike, kreatore sadržaja i sve koji traže stil i performanse u pokretu. Opremljeni su kvalitetnim ekranima (često OLED ili 4K), dugotrajnom baterijom, brzim SSD-ovima, i najnovijim Intel/AMD procesorima. Neki modeli uključuju inovativne elemente poput ScreenPad-a (sekundarni ekran u touchpadu), obrubljenih bezeli i Ergolift mehanizam za poboljšanu ergonomiju i hlađenje. ZenBook balansira estetiku, snagu i praktičnost, te predstavlja jednu od najzrelijih opcija za poslovne korisnike koji putuju često ili rade u pokretu.</string>
+
+    <string name="dell_short_description">Poslovni standard sa snažnim pedigreom</string>
+    <string name="dell_full_description">Dell Technologies je američka korporacija osnovana 1984. godine, poznata po inovacijama, poslovnim rješenjima i pouzdanim uređajima. Dell laptopi su cijenjeni zbog trajnosti, profesionalnog dizajna i široke podrške za poslovne korisnike. Serije poput Inspiron, Vostro i Latitude ciljaju različite tipove korisnika, dok Dell XPS i Alienware ciljaju premium i gaming segment. Dell-ovi uređaji se često koriste u korporativnim okruženjima zbog njihove pouzdanosti, sigurnosnih funkcija i mogućnosti servisiranja. Softverska rješenja i BIOS konfiguracije dodatno olakšavaju implementaciju u profesionalnom svijetu. Bez obzira da li vam treba svakodnevni laptop, poslovni alat ili gaming monstrum, Dell nudi sve to pod jednim brendom.</string>
+
+    <string name="dell_xps_short_description">Minimalistički premium ultrabook</string>
+    <string name="dell_xps_full_description">XPS (Xtreme Performance System) je Dell-ova prestižna linija ultrabook laptopa koja se takmiči sa najboljima iz Apple, HP i ASUS ponude. Poznat po izuzetnom dizajnu, skoro bez ivica (InfinityEdge), XPS laptopi nude briljantne ekrane (do 4K OLED), vrhunske materijale (CNC aluminijum, karbonska vlakna) i performanse koje zadovoljavaju i profesionalce i kreatore sadržaja. Sa Intel Core i7/i9 i najnovijim SSD diskovima, XPS je idealan za obradu fotografija, video montažu, kodiranje i poslovnu upotrebu. Dodatne funkcije kao što su Thunderbolt portovi, dug vijek baterije i visoka prenosivost čine ga favoritom među IT profesionalcima i estetski orijentisanim korisnicima.</string>
+
+    <string name="dell_alienware_short_description">Ekstremne performanse za gejmere</string>
+    <string name="dell_alienware_full_description">Alienware je Dell-ova gejmerska divizija, prepoznatljiva po futurističkom dizajnu, svjetlosnim elementima i vrhunskim gaming performansama. Laptopi iz Alienware serije dolaze sa najnovijim Intel/AMD procesorima, NVIDIA RTX grafikom, ekranima visokog osvježenja i izuzetnim sistemima hlađenja (poput Cryo-Tech). Dizajnirani su za najzahtjevnije igre i VR iskustva, a često uključuju opcije za overklokovanje i prilagodljivo RGB osvjetljenje. Iako su teži i skuplji, Alienware uređaji nude najviši stepen personalizacije i snage dostupne u laptop formi. Koriste ih entuzijasti, streameri, developeri igara i svi koji žele desktop performanse u prijenosnom pakovanju.</string>
+
+    <string name="gigabyte_short_description">Tehnički orijentisan brend za gejmere i entuzijaste</string>
+    <string name="gigabyte_full_description">Gigabyte Technology je tajvanska firma poznata po hardverskim komponentama, a posljednjih godina i po sve popularnijim linijama laptopa. Njihovi laptopi ciljaju gejmere, kreatore sadržaja i napredne korisnike kojima su performanse i specifikacije prioritet. Gigabyte-ovi laptopi često dolaze sa jakim RTX grafičkim karticama, visokorezolucijskim ekranima, naprednim hlađenjem i visokim mogućnostima nadogradnje. Brend nudi linije kao što su AORUS (fokusiran na gaming) i AERO (za kreativne profesionalce), koje kombinuju snagu i elegantan dizajn. Gigabyte nije toliko orijentisan ka širem potrošačkom tržištu, ali za one koji traže "mašinu ispod haube", ovaj brend predstavlja odličan izbor sa naglaskom na tehničke specifikacije i performanse.</string>
+
+    <string name="gigabyte_aero_short_description">Moć za kreativce</string>
+    <string name="gigabyte_aero_full_description">Gigabyte Aero serija je posebno dizajnirana za profesionalne kreatore sadržaja poput grafičkih dizajnera, video montažera i arhitekata. Opremljeni su precizno kalibrisanim ekranima (često 4K AMOLED), koji podržavaju 100% AdobeRGB i Pantone validaciju, što garantuje vjernost boja i visok kontrast. Aero laptopi kombinuju snagu NVIDIA RTX kartica, visoke performanse Intel/AMD procesora i brzu memoriju kako bi omogućili nesmetan rad u softverima poput Adobe Premiere, Blender, AutoCAD i sličnim alatima. Fokus nije na gejmingu, već na kreativnom radu gdje je vizuelna preciznost ključna. Uz moderni dizajn i lagano kućište, Aero serija spaja stil i snagu na visokom profesionalnom nivou.</string>
+
+    <string name="gigabyte_aorus_short_description">Gejming snaga bez kompromisa</string>
+    <string name="gigabyte_aorus_full_description">AORUS je gejming podbrend kompanije Gigabyte, fokusiran na najviše performanse i agresivan dizajn. Laptopi iz ove serije opremljeni su naprednim procesorima i najnovijim NVIDIA RTX grafičkim karticama, ekranima sa visokim osvježavanjem (144Hz, 240Hz, pa i 360Hz), kao i termalnim sistemima sa više ventilatora i toplotnih cijevi. AORUS je poznat i po RGB osvjetljenju, podešavanju performansi kroz AORUS Control Center, te hardverskoj modularnosti. Gejmeri koji žele vrhunski učinak u FPS, RTS i AAA naslovima, kao i streameri koji traže balans između performansi i vizuelnog dojma, često biraju AORUS kao pouzdan izbor.</string>
+
+    <string name="hp_short_description">Širok spektar laptopa za sve korisnike</string>
+    <string name="hp_full_description">Hewlett-Packard, ili jednostavno HP, jedan je od najpoznatijih brendova u svijetu računarstva. Njihova ponuda laptopa obuhvata sve segmente tržišta: od budžetskih modela za svakodnevnu upotrebu (Pavilion, 15s), preko poslovnih rješenja (ProBook, EliteBook), do premium ultrabookova (Spectre, Envy) i gaming laptopa (Omen, Victus). HP laptopi su poznati po kvalitetu izrade, elegantnom dizajnu i dugoj podršci. Često dolaze sa dodatnim sigurnosnim funkcijama poput čitača otiska prsta ili TPM čipova, što ih čini pogodnim za poslovnu upotrebu. Njihov servis i prisustvo na tržištu širom svijeta čine ih jednim od najpouzdanijih izbora za korisnike koji žele prepoznatljiv brend s iskustvom i podrškom.</string>
+
+    <string name="hp_omen_short_description">Vrhunski gejming u HP svijetu</string>
+    <string name="hp_omen_full_description">Omen je HP-ov gaming podbrend koji nudi laptop računare visokih performansi za gejming i kreativan rad. Omen laptopi dolaze sa snažnim Intel/AMD procesorima, NVIDIA RTX grafičkim karticama, ekranima visokog osvježenja i brzim SSD-ovima. Pored performansi, Omen laptopi se ističu i elegantnim dizajnom sa suptilnim RGB osvjetljenjem i modernim, minimalističkim kućištem. Omen Gaming Hub softver omogućava korisnicima kontrolu nad sistemom, podešavanje performansi, monitoring temperature i personalizaciju osvjetljenja. Zahvaljujući balansu između estetike i snage, Omen je čest izbor kako među gamerima, tako i kod video editora, streamera i kreatora digitalnog sadržaja.</string>
+
+    <string name="hp_victus_short_description">Pristupačan gaming za svakoga</string>
+    <string name="hp_victus_full_description">Victus je novija gaming linija unutar HP portfolija, dizajnirana za korisnike koji žele dobar gejming uređaj bez plaćanja cijene premium modela. Victus laptopi kombinuju moderan, elegantan dizajn s pristojnim performansama – idealni su za casual gejming, streamanje, učenje, pa čak i lagani kreativni rad. Uređaji koriste Intel Core i5/i7 ili AMD Ryzen 5/7 procesore uz NVIDIA GTX/RTX grafiku, a često nude i osvježavanje ekrana od 144Hz. Victus laptopi su jednostavni, bez agresivnih gejming elemenata, što ih čini pogodnim i za poslovno okruženje. Idealan su izbor za studente, mlade gejmere i korisnike sa ograničenim budžetom koji žele solidan all-around uređaj.</string>
+
+    <string name="lenovo_short_description">Pouzdanost, inovacija i raznovrsnost</string>
+    <string name="lenovo_full_description">Lenovo Group Limited je kineska multinacionalna tehnološka kompanija i jedan od najvećih proizvođača laptopa na svijetu. Njihova ponuda pokriva gotovo svaki segment tržišta – od pristupačnih IdeaPad modela, preko legendarnih poslovnih ThinkPad serija, do naprednih gaming rješenja pod oznakom Legion. Lenovo laptopi su poznati po izdržljivosti, ergonomiji (posebno tastaturi), stabilnosti i pametnom dizajnu. Posebno mjesto zauzima ThinkPad serija, nekada IBM-ova, koja je standard u poslovnim i akademskim krugovima. Lenovo takođe ulaže u inovacije kao što su 2-u-1 konvertibilni modeli, ekrani osjetljivi na dodir i AI optimizaciju sistema. Brend nudi sjajan odnos cijene i kvaliteta, čineći ga jednim od najtraženijih izbora širom svijeta.</string>
+
+    <string name="lenovo_thinkpad_short_description">Poslovni klasik i sinonim pouzdanosti</string>
+    <string name="lenovo_thinkpad_full_description">ThinkPad je legendarna serija poslovnih laptopa prvobitno razvijena od strane IBM-a, a od 2005. godine pod Lenovo brendom. Ova serija je poznata po svojoj robusnosti, minimalističkom dizajnu, izuzetnoj tastaturi i poslovno orijentisanim karakteristikama poput TrackPoint kursora, sigurnosnih rješenja (TPM, SmartCard, čitač otiska) i opcionalnog 4G/LTE povezivanja. Mnogi modeli posjeduju MIL-STD certifikate izdržljivosti i predstavljaju industrijski standard u kompanijama, vladinim agencijama i obrazovnim institucijama. ThinkPad serija je omiljena među inženjerima, programerima, poslovnim liderima i profesorima – svi koji traže neupitan kvalitet i dugoročnu pouzdanost često se odlučuju upravo za ThinkPad.</string>
+
+    <string name="lenovo_yoga_short_description">Fleksibilnost u elegantnom pakovanju</string>
+    <string name="lenovo_yoga_full_description">Yoga serija predstavlja Lenovo-ovu liniju 2-u-1 konvertibilnih laptopa koji kombinuju mobilnost, stil i funkcionalnost. Zahvaljujući šarkama koje se rotiraju za 360 stepeni, Yoga uređaji se mogu koristiti kao laptop, tablet, ili u “tent” modu za gledanje sadržaja. Dolaze sa ekranima osjetljivim na dodir, podrškom za digitalne olovke, te tanjim, premium dizajnom. Yoga laptopi su idealni za korisnike u pokretu, studente, dizajnere i kreativce koji traže svestran uređaj koji može lako preći iz rada u zabavu. Serija uključuje i napredne modele sa OLED ekranima, Dolby Atmos zvukom i Intel Evo certifikatom za izuzetne performanse i trajanje baterije.</string>
+
+    <string name="lenovo_legion_short_description">Gaming bez kompromisa</string>
+    <string name="lenovo_legion_full_description">Legion je Lenovo-ova gaming serija koja nudi snažne performanse u elegantnom i modernom dizajnu. Sa fokusom na performanse, Legion laptopi dolaze sa moćnim Intel ili AMD procesorima, NVIDIA RTX grafikom, ekranima sa visokim osvježenjem (144Hz, 165Hz i više), naprednim sistemima hlađenja (Coldfront) i RGB osvjetljenjem tastature. Iako su prvenstveno namijenjeni gamerima, zahvaljujući profesionalnom izgledu i snažnim komponentama, Legion uređaji su čest izbor i među kreatorima sadržaja i inženjerima. Dodatni softver poput Lenovo Vantage omogućava fino podešavanje sistema i praćenje performansi. Legion uspješno spaja gaming snagu sa poslovnim stilom.</string>
+
+    <string name="lg_gram_short_description">Ultralagan i dugotrajan</string>
+    <string name="lg_gram_full_description">LG Gram serija je poznata po izuzetno laganim laptopima koji kombinuju prenosivost, dugotrajnu bateriju i kvalitetnu izradu. LG je postavio nove standarde u težinskoj klasi ultrabook uređaja, s modelima koji teže ispod 1 kg, bez kompromisa u pogledu veličine ekrana (često i 16 ili 17 inča). Gram laptopi dolaze sa Intel Evo certifikatom, SSD diskovima, Thunderbolt portovima i baterijama koje često traju 15+ sati. Ova serija je posebno popularna među poslovnim korisnicima, studentima i svima koji traže laptop koji mogu nositi cijeli dan, bez napora i bez potrebe za punjačem. Gram predstavlja LG-ov spoj minimalističkog dizajna, snage i mobilnosti.</string>
+
+    <string name="microsoft_surface_short_description">Elegancija susreće produktivnost</string>
+    <string name="microsoft_surface_full_description">Microsoft Surface je premium linija uređaja koju razvija sam Microsoft, fokusirajući se na elegantan dizajn, napredne funkcionalnosti i vrhunsku integraciju s Windows operativnim sistemom. Surface laptopi i 2-u-1 uređaji (poput Surface Pro i Surface Laptop) poznati su po kvalitetnim PixelSense ekranima sa visokom rezolucijom, podršci za digitalne olovke, laganom kućištu od aluminijuma i sofisticiranom dizajnu. Ovi uređaji često koriste Intel Evo platformu i optimizovani su za rad sa Microsoft 365, čime pružaju besprijekorno iskustvo u poslovnim i obrazovnim okruženjima. Surface predstavlja sinergiju softvera i hardvera u Microsoft ekosistemu – idealno rješenje za moderni rad na daljinu, kreativnost i učenje.</string>
+
+    <string name="msi_short_description">Snažni laptopi za gejmere i profesionalce</string>
+    <string name="msi_full_description">MSI (Micro-Star International) je tajvanski proizvođač poznat po svojim vrhunskim gaming i profesionalnim laptopima. Njihovi uređaji su posebno cijenjeni zbog naprednih sistema hlađenja, jakih procesora, RTX grafičkih kartica i ekrana visokog osvježenja. Gaming serije poput GE, GP i GS nude brutalne performanse uz estetski agresivan dizajn i RGB osvjetljenje. S druge strane, Creator i Prestige linije ciljaju profesionalce koji se bave dizajnom, renderovanjem i video obradom. MSI takođe implementira AI funkcije, SteelSeries tastature i softverska rješenja za optimizaciju sistema. Brend je čest izbor među streamerima, esport entuzijastima i tehnički potkovanim korisnicima koji traže vrhunski hardver.</string>
+
+    <string name="msi_gaming_short_description">Ekstremne performanse za prave gejmere</string>
+    <string name="msi_gaming_full_description">MSI Gaming serija predstavlja samu srž MSI-ove ekspertize u svijetu igara. Ovi laptopi su pažljivo dizajnirani da pruže maksimalne performanse čak i u najzahtjevnijim AAA naslovima. Sa najnovijim generacijama Intel/AMD procesora, NVIDIA RTX grafikom, naprednim sistemima hlađenja (Cooler Boost tehnologija), te RGB osvijetljenim tastaturama (u saradnji sa SteelSeries), MSI Gaming uređaji nude impresivan balans snage, dizajna i funkcionalnosti. Opremljeni su ekranima visokog osvježenja (144Hz, 165Hz, pa i 240Hz), odličnim zvučnicima i čvrstim kućištem. Česti su izbor profesionalnih gejmera, streamera, esport timova i svih koji žele ozbiljnu mašinu za igre bez kompromisa.</string>
+
+    <string name="razer_short_description">Elitni gejming u elegantnom crnom pakovanju</string>
+    <string name="razer_full_description">Razer Inc. je prestižni brend u gejming industriji, poznat po premium uređajima koji kombinuju vrhunske performanse i minimalistički dizajn. Njihovi laptopi iz serije Razer Blade predstavljaju spoj snage i elegancije – tanak aluminijumski dizajn, RGB osvjetljenje (Razer Chroma), visokokvalitetni ekran (Full HD, QHD, 4K OLED) i najnovije NVIDIA RTX grafičke kartice. Razer laptopi su idealni za korisnike koji žele gaming performanse u kućištu ultrabooka – često se porede s MacBook Pro, ali za Windows gejming svijet. Osim igara, koriste ih i kreatori sadržaja, developeri i profesionalci koji žele moćan, prenosiv i elegantan laptop. Cijena je viša, ali Razer opravdava svaku marku vrhunskim kvalitetom izrade i performansama.</string>
+
+    <string name="samsung_galaxy_book_short_description">Spoj mobilnosti i produktivnosti</string>
+    <string name="samsung_galaxy_book_full_description">Samsung Galaxy Book serija donosi prepoznatljiv kvalitet i eleganciju Samsung uređaja u svijet Windows laptopa. Ova linija laptopa fokusira se na mobilnost, dugotrajnu bateriju i vrhunsku integraciju sa Samsung Galaxy ekosistemom (telefoni, tableti, slušalice, pametni satovi). Galaxy Book uređaji su tanki i lagani, dolaze sa AMOLED ekranima visoke rezolucije, Intel Evo certifikatom, brzim SSD-ovima i Wi-Fi 6/6E podrškom. Neki modeli nude i S Pen podršku za crtanje i bilješke. Posebno su atraktivni korisnicima koji već koriste Samsung telefone, jer omogućavaju funkcije poput „Second Screen“, „Link to Windows“ i brzi prijenos podataka. Idealni su za studente, poslovne korisnike i digitalne nomade.</string>
+
+    <string name="xmg_short_description">Moćni laptopi za gejmere i entuzijaste</string>
+    <string name="xmg_full_description">XMG (eXtended Mobile Gaming) je brend njemačke kompanije Schenker Technologies koji se specijalizovao za visoko konfigurisane gaming laptope, prilagođene korisnicima koji žele apsolutnu kontrolu nad hardverom. XMG uređaji omogućavaju naprednu personalizaciju prilikom kupovine – korisnik može birati procesor, grafiku, RAM, memoriju, pa čak i vrstu sistema hlađenja. Brend je omiljen među tehnički potkovanim korisnicima i gamerima koji žele desktop performanse u mobilnom formatu. XMG laptopi se fokusiraju na funkcionalnost, ne previše na estetiku – robustan dizajn, efikasno hlađenje i lakoća zamjene komponenti ih čine idealnim za profesionalce, programere, 3D umjetnike i esport entuzijaste koji žele najviše moguće performanse uz potpunu slobodu konfiguracije.</string>
+</resources>

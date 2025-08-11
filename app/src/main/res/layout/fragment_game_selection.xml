@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gaming_pattern">
+
+    <!-- Gaming pattern background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_gaming_pattern"
+        android:scaleType="centerCrop"
+        android:alpha="0.15" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="#E6FFFFFF">
+
+            <!-- App Logo -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/logo_text"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Explanation text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Odaberi igru ako želiš provjeriti kako bi radila na laptopu"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Game selection button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSelectGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Odaberi Igru"
+                android:layout_marginTop="16dp"
+                app:backgroundTint="@color/primary"
+                android:textColor="@android:color/white"/>
+
+            <!-- Selected game artwork -->
+            <ImageView
+                android:id="@+id/ivGameArtwork"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="24dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:contentDescription="Artwork odabrane igre"/>
+
+            <!-- Details button with secondary color -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnViewDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prikaži detalje igre"
+                android:visibility="gone"
+                app:backgroundTint="@color/secondary"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Add specs selector and display area -->
+            <LinearLayout
+                android:id="@+id/specsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="16dp">
+
+                <!-- Specs selector -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMinSpecs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Minimalne"
+                        app:backgroundTint="@color/primary"
+                        android:textColor="@android:color/white"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRecSpecs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Preporučene"
+                        app:backgroundTint="@color/secondary"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <!-- Specs details with swipe area -->
+                <TextView
+                    android:id="@+id/tvSpecsDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="120dp"
+                    android:padding="16dp"
+                    android:textSize="14sp"
+                    android:lineSpacingMultiplier="1.3"
+                    android:background="@drawable/bg_specs_container"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

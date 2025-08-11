@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_edit_profile"
+        android:title="Uredi profil"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_history"
+        android:title="O aplikaciji"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_description"
+        android:title="Uslovi korištenja"
+        app:showAsAction="never"/>
+
+    <!-- Add this new item -->
+    <item
+        android:id="@+id/action_test_notification"
+        android:title="Test notifikacija"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,42 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Ženski simbol (Venus) -->
+    <group
+        android:name="female"
+        android:translateX="4"
+        android:translateY="2">
+        <!-- Krug: počinje u točki (4,1) i crta puni krug s radijusom 3 -->
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M4,1 a3,3 0 1,0 0,6 a3,3 0 1,0 0,-6" />
+        <!-- Vertikalni dio križa -->
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M3.5,7 L4.5,7 L4.5,10 L3.5,10 Z" />
+        <!-- Horizontalni dio križa -->
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M2.5,8 L6.5,8 L6.5,9 L2.5,9 Z" />
+    </group>
+
+    <!-- Muški simbol (Mars) -->
+    <group
+        android:name="male"
+        android:translateX="14"
+        android:translateY="2">
+        <!-- Krug: isti postupak kao kod ženskog simbola -->
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M4,1 a3,3 0 1,0 0,6 a3,3 0 1,0 0,-6" />
+        <!-- Strelica koja izlazi iz kruga (približno u smjeru gornjeg desnog kuta)
+             definirana kao zatvorena četverokutna figura -->
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M5.62,1.38 L7.74,-0.74 L8.74,0.26 L6.62,2.38 Z" />
+    </group>
+
+</vector>

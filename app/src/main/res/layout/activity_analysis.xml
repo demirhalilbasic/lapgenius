@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- ViewPager za prikaz AI analize (prostire se preko cijelog ekrana) -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Dugmad ispod kartica - ostaju na istom mjestu -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <!-- Otvori OLX button u lila boji -->
+        <Button
+            android:id="@+id/btnOpenOlx"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/lilac"
+            android:backgroundTintMode="src_in"
+            android:elevation="4dp"
+            android:text="🔗 Otvori OLX"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Sačuvaj recenziju (ostaje nepromijenjen) -->
+        <Button
+            android:id="@+id/btnSaveReview"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/teal_700"
+            android:backgroundTintMode="src_in"
+            android:elevation="4dp"
+            android:text="💾 Sačuvaj recenziju"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Izađi iz recenzije button u rozoj (secondary) boji -->
+        <Button
+            android:id="@+id/btnExitReview"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/secondary"
+            android:backgroundTintMode="src_in"
+            android:elevation="4dp"
+            android:text="↩ Izađi iz recenzije"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

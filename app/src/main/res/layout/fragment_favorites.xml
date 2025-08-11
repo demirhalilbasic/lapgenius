@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reviewsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="72dp"
+        android:clipToPadding="false"/>
+
+    <TextView
+        android:id="@+id/emptyStateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:textColor="@color/primary"
+        android:gravity="center"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="16dp"/>
+
+</FrameLayout>

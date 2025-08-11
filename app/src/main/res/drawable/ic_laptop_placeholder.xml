@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Laptop ekran -->
+    <path
+        android:fillColor="@color/darker_gray"
+        android:pathData="M20,18H4V5h16v13z" />
+
+    <!-- Baza/klavijatura laptopa -->
+    <path
+        android:fillColor="@color/darker_gray"
+        android:pathData="M22,20H2v2h20v-2z" />
+</vector>

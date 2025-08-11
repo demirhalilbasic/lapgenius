@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Desna strelica (usmjerena prema desno) -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M16,4l-1.41,1.41L18.17,9H10v2h8.17l-3.58,3.59L16,16l6-6z" />
+
+    <!-- Lijeva strelica (usmjerena prema lijevo) -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M8,20l1.41-1.41L5.83,15H14v-2H5.83l3.58-3.59L8,8l-6,6z" />
+</vector>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Veličina kružnice -->
+    <size
+        android:width="40dp"
+        android:height="40dp"/>
+
+    <!-- Unutrašnja boja klastera (npr. crvena) -->
+    <solid android:color="#F44336"/>
+
+    <!-- Bijeli obrub debљine 2dp -->
+    <stroke
+        android:width="2dp"
+        android:color="#FFFFFF"/>
+</shape>

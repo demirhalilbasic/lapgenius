@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="purpose_prompt">Odaberi namjenu uređaja</string>
+    <string-array name="purpose_options">
+        <item>🧰 Svakodnevna upotreba</item>
+        <item>💼 Posao/Produktivnost</item>
+        <item>🌐 Surfanje internetom</item>
+        <item>🎬 Zabava/Multimedija</item>
+        <item>🎮 Casual Gaming</item>
+        <item>🔥 Zahtjevniji Gaming naslovi</item>
+        <item>🎓 Studentska upotreba</item>
+        <item>🏃‍♂️ Lagano korištenje u pokretu</item>
+        <item>👨‍💻 Programiranje/Razvoj</item>
+        <item>🛡️ IT sigurnost/pen-testing</item>
+        <item>🧱 3D dizajn i modeliranje</item>
+        <item>🖌️ Digitalna umjetnost </item>
+        <item>📡 Streaming igara</item>
+        <item>📺 Streaming općenito</item>
+    </string-array>
+
+    <string name="secondary_prompt">Odaberi dodatni fokus</string>
+    <string-array name="secondary_options">
+        <item>⚖️ Uravnoteženo</item>
+        <item>🎨 Grafičke performanse</item>
+        <item>🖥️ Ekran visoke rezolucije</item>
+        <item>🛠️ Kvalitet izrade</item>
+        <item>⚡ Brzo punjenje</item>
+        <item>🎒 Prenosivost</item>
+        <item>📸 Kvalitetna kamera za videopozive</item>
+        <item>🔊 Kvalitetan audio sistem</item>
+        <item>🌙 Tihi rad</item>
+        <item>🔋 Dugotrajna baterija</item>
+        <item>🧩 Proširivost (RAM, SSD, portovi)</item>
+        <item>❄️ Efikasno hlađenje</item>
+    </string-array>
+</resources>

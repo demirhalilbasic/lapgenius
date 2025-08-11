@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Odaberite boju ili gradijent po želji -->
+    <solid android:color="@color/white"/>
+    <corners android:radius="8dp"/>
+    <!-- Ako želite uzorak, ovdje možete ubaciti <bitmap> ili <gradient> -->
+</shape>

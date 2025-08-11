@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/beige">
+
+    <!-- Omotač s paddingom za bež obrub -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <!-- Bijela pozadina unutar kartice -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="8dp"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/ivPreview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:maxLines="2"
+                    android:textColor="@color/primary" />
+
+                <!-- Za ocjenu -->
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:drawablePadding="4dp"
+                    android:drawableStart="@drawable/ic_favorites"
+                    android:drawableTint="@color/light_blue"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/light_blue" />
+
+                <!-- Za pretražio -->
+                <TextView
+                    android:id="@+id/tvUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:drawablePadding="4dp"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawableTint="@color/secondary"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/secondary"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</com.google.android.material.card.MaterialCardView>

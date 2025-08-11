@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Dodani logo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/logo_text"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkboxVisual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uključiti vizualnu analizu (+1 kredita)"/>
+
+    <TextView
+        android:id="@+id/tvCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"/>
+</LinearLayout>
